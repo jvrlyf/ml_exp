@@ -32,3 +32,10 @@ with Live(save_dvc_exp=True) as live:
     live.log_metric('recall_score', recall_score(y_test ,y_pred))
     live.log_metric('f1_score', f1_score(y_test ,y_pred))
 
+    live.log_param('n_estimators', n_estimators)
+    live.log_param('max_depth', max_depth)
+
+    
+
+
+
